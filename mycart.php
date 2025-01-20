@@ -153,28 +153,7 @@ include("header.php");
         </div>
     </div>
       <script>
-        var gt=0;
-            var iprice=document.getElementsByClassName('iprice');
-            var iquantity=document.getElementsByClassName('iquantity');
-            var itotal=document.getElementsByClassName('itotal');
-            var gTotal=document.getElementById('gTotal');
-
-            function updateInputValue()
-             {
-            // Get the current input value
-            var currentValue = document.getElementById("inputValue").value;
-
-            // Send the current value to a PHP script using AJAX
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    // 4 -DONE: The operation is complete, and the full response is available. used in AJAX (Asynchronous JavaScript and XML), 
-                     alert("Value updated in session: " + currentValue);
-                }
-            };
-            xhttp.open("GET", "updateSession.php?currentValue=" + currentValue, true);
-            xhttp.send();
-              }
+   
             function subTotal()
             {  
               gt=0;
